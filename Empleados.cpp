@@ -31,5 +31,9 @@ int main(){
     std::cout<<"Genero de empleado con mayor sueldo: "<<empleados[indice].sexo<<"\n";
     std::cout<<"Sueldo del empleado con mayor sueldo: "<<empleados[indice].sueldo<<"\n";
     std::cout<<"=====================================================================\n";
+
+
+
+    std::cout<<"Prueba de modificacion git 01";
     return 0;
 }
