@@ -15,8 +15,13 @@ struct datos{
 
 int main(){
 
-    int n;
-    std::cout<<"cantidad de personas: "; std::cin>>n;
+    int n=0;
+    do{
+
+        system("cls");
+        std::cout<<"Cantidad de personas (0< y <190): "; std::cin>>n;
+
+    }while(n<=0 || n>190);
 
     for(int i=0; i<n; i++){
         std::cin.ignore();
