@@ -35,19 +35,23 @@ int main(){
                 >>dt[i].fecha.anio;
     }
 
-    int m=1; 
+    int m=-1; 
     do{
-        system("cls");
+        do{
 
-        std::cout<<"ingrese un mes: "; std::cin>>m;
-        if(m==0){break;}
-        std::cout<<"datos de las personas que nacieron en ese mes: \n";
+            system("cls");
+            std::cout<<"Ingrese un mes: "; std::cin>>m;
+
+        }while(m<0 || m>12);
+
+        if(m==0){break; std::cout<<"=================================================================";}
+
+        std::cout<<"Personas que nacieron en el mes "<<m<<": \n";
 
         for(int i=0; i<n; i++){
             if(dt[i].fecha.mes==m){
 
-                std::cout<<"persona "<<i+1<<": \n";
-                std::cout<<"nombre: "<<dt[i].nombre<<" --- "<<" fecha de nacimiento: "<<dt[i].fecha.dia<<"/"<<dt[i].fecha.mes<<"/"<<dt[i].fecha.anio<<"\n";
+                std::cout<<i+1<<"| "<<dt[i].nombre<<" ------ Nacimiento: "<<dt[i].fecha.dia<<"/"<<dt[i].fecha.mes<<"/"<<dt[i].fecha.anio<<"\n\n";
 
             }
         }
