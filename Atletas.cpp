@@ -44,15 +44,18 @@ int main(){
     int indice=0; /*Aqui almacenare el indice del atleta con mayor medallas*/
 
     for(int i=0; i<n; i++){
-        if(atle[i].medallas > cont){
+        
+        if(atle[i].pais==temp){
+            if(atle[i].medallas > cont){
 
-            cont = atle[i].medallas;
-            indice = i;
+                cont = atle[i].medallas;
+                indice = i;
 
+            }
         }
     }
 
-    std::cout<<"Atleta con mayor medallas, Atleta ["<<indice+1<<"]\n\n";
+    std::cout<<"Atleta con mayor medallas del pais "<<temp<<", Atleta ["<<indice+1<<"]\n\n";
 
     std::cout<<"Nombre: "<<atle[indice].nombre<<"\n";
     std::cout<<"País: "<<atle[indice].pais<<"\n";
