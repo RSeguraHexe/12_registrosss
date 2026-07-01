@@ -57,7 +57,7 @@ int main(){
 
         switch(op){
             case 'A':
-            case 'a':
+            case 'a':{
                 char z='X'; /*Confirmacion*/ 
                 do{
                     std::cout<<"====================================================================\n";
@@ -83,9 +83,9 @@ int main(){
                     }
                 }while(z!='S' && z!='s');
                 break;
-            
+            }
             case 'B':
-            case 'b':
+            case 'b':{
                 std::cout<<"====================================================================\n";
                 std::cout<<"Agregando productos existentes!\n";
                 std::cout<<"====================================================================\n";
@@ -119,6 +119,7 @@ int main(){
                 }
 
                 break;
+            }
         }
     }while(op!='J' && op!='j');
 }
