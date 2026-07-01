@@ -65,8 +65,6 @@ int main(){
                     std::cout<<"====================================================================\n";
                     std::cout<<"Producto ["<<k+1<<"] \n\n";
 
-                    std::cin.ignore();
-
                     std::cout<<"Nombre del producto: "; std::cin.ignore(); std::getline(std::cin, prod[k-1].nombre);
                     std::cout<<"Precio del producto: "; std::cin>>prod[k-1].precio;
                     std::cout<<"====================================================================\n";
