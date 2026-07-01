@@ -3,6 +3,7 @@
 #include<cstdlib>
 
 struct Persona{
+    std::string nombre;
     std::string dni;
     float edad;
 };
@@ -18,6 +19,7 @@ int main(){
 
     for(int i=0; i<n; i++){
         std::cout<<"|"<<i+1<<"|\n";
+        std::cout<<"Ingrese el nombre de la persona: "; std::cin>>personas[i].nombre;
         std::cout<<"Ingrese el DNI de la persona: "; std::cin>>personas[i].dni;
         std::cout<<"Ingrese la edad de la persona: "; std::cin>>personas[i].edad;
         std::cout<<"=====================================================================\n";
@@ -45,7 +47,7 @@ int main(){
     std::cout<<"=====================================================================\n";
 
     for(int i=0; i<n; i++){
-        std::cout<<"DNI: "<<personas[i].dni<<" - Edad: "<<personas[i].edad<<"\n";
+        std::cout<<"Nombre: "<<personas[i].nombre<<" - DNI: "<<personas[i].dni<<" - Edad: "<<personas[i].edad<<"\n";
     }
     std::cout<<"=====================================================================\n";
 
