@@ -64,4 +64,20 @@ int main(){
     std::cout<<"=====================================================================\n";
     
     system("pause");
+    system("cls");
+
+    std::cout<<"=====================================================================\n";
+
+    for(int i=0; i<n; i++){
+        if(atle[i].pais==temp){
+
+            std::cout<<"Atleta ["<<i+1<<"]\n\n";
+            
+            std::cout<<"Nombre: "<<atle[i].nombre<<"\n";
+            std::cout<<"País: "<<atle[i].pais<<"\n";
+            std::cout<<"Disciplina: "<<atle[i].disciplina<<"\n";
+            std::cout<<"Medallas: "<<atle[i].medallas<<"\n";
+            std::cout<<"=====================================================================\n";
+        }
+    }
 }
