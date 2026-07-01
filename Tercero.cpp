@@ -44,7 +44,7 @@ int main(){
 
         }while(m<0 || m>12);
 
-        if(m==0){break; std::cout<<"=================================================================";}
+        if(m==0){break;}
 
         std::cout<<"Personas que nacieron en el mes "<<m<<": \n";
 
